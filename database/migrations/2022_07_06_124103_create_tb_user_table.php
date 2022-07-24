@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('todolist', function (Blueprint $table) {
-           $table->increments('id');
-           $table->string('name');
-           $table->boolean('is_done')->default(false);
-           $table->timestamps();
-        });
+       Schema::create('tb_user', function(Blueprint $table){
+        $table->id('user_id');
+        $table->string('name');
+        $table->string('username')->unique;
+        $table->string('password');
+        $table->timestamps();
+       });
     }
-
 
     /**
      * Reverse the migrations.
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('todolist');
+        Schema::dropIfExists('tb_user');
     }
 };

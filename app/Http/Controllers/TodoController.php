@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Todo;
+use DB;
 
 
 class TodoController extends Controller
@@ -23,7 +24,8 @@ class TodoController extends Controller
     }
     public function store(Request $request)
     {
-        Todo::create($request->all());
+        $data = $request->all();
+        $todo = Todo::create($request->all());
         return redirect('/');
     }
     public function edit(Todo $todo)

@@ -14,21 +14,7 @@ use App\Http\Controllers\TodoController;
 |
 */
 
-// Route::get('/todos', function () {
-//     return 'TODOs';
-// });
-// Route::post('/todos', function(){
 
-// });
-// Route::get('todos/{todo}' , function(){
-
-// });
-// Route::put('todos/{todo}', function(){
-
-// });
-// ROute::delete('/todos/{todo}', function(){
-
-// });
 Route::get('/', [TodoController::class ,'index']);
 
 

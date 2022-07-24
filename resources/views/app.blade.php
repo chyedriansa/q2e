@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>ToDoList.App</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
@@ -24,7 +24,7 @@
 <body id="app-layout" class="bg-[url('/51390.webp')] bg-no-repeat bg-cover" >
 
 <nav class="navbar navbar-default navbar-static-top bg bg-transparent border-none">
-    <div class="container">
+    <div class="container flex justify-center">
         <div class="navbar-header">
 
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
@@ -34,7 +34,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand text-white text-5xl" href="{{ url('/') }}">
+            <a class="navbar-brand text-white text-5xl text-center" href="{{ url('/') }}">
                 Laravel ToDo List
             </a>
         </div>
